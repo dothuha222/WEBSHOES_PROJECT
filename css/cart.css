@@ -1,0 +1,419 @@
+
+.cart_wrap{
+    width: 80%;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.cart_wrap > .back_to_shop > a{
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #CF636A;
+    border: 1px solid #CF636A;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all linear 0.12s;
+}
+
+.cart_wrap > .back_to_shop > a:hover{
+    background-color: #cf636a9b;
+    color: #fff;
+}
+
+/* Cart empty */
+.cart_empty{
+    display: none;
+}
+.cart_empty-img{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
+}
+
+/* Cart fill */
+.cart_no-empty{
+    display: none;
+}
+
+.table_cart-area{
+    margin-top: 50px;
+}
+
+.table_cart-area-top{
+    max-height:420px;
+    overflow-y: scroll;
+}
+
+.table_cart{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table_cart tr{
+    text-align:center;
+}
+
+.table_cart th{
+    padding: 20px 0;
+}
+
+.table_cart th.product{
+    text-align: left;
+}
+.table_cart td{
+    padding: 10px;
+}
+
+.table_cart tr.cart_item{
+    border-top: 1px solid #ccc9;
+    border-bottom: 1px solid #ccc9;
+
+}
+/* 
+.table_cart tr.cart_item:last-child{
+    border-bottom: 1px solid #ccc9;
+
+} */
+
+/* Product */
+.product{
+    width: 50%;
+}
+
+.cart_item .cart_info{
+    display: flex;
+    align-items: center;
+    
+}
+
+.cart_img{
+    width: 16%;
+}
+
+.cart_img > img{
+    width: 100%;
+}
+
+.cart_content{
+    padding: 0 16px;
+}
+
+.cart_content > h3{
+    font-size: 18px;
+}
+
+.cart_content > p{
+    font-size: 13px;
+    padding: 6px 0;
+    text-align: left;
+
+}
+
+/* Quantity */
+.quantity{
+    width: 20%;
+}
+
+.quantity input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size:16px;
+
+}
+
+.quantity input.qty_item{
+    text-align: center;
+    width: 28%;
+}
+
+.qty_decrease,.qty_increase{
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Clear btn */
+.cart_item .clear > div{
+    display: inline-block;
+    padding: 0px 6px;
+    border-radius: 50%;
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.cart_item .clear > div:hover{
+    border: 1px solid rgba(255, 0, 0, 0.555);
+    background-color: rgba(255, 0, 0, 0.751);
+    color: #fff;
+}
+
+/* Final total */
+.final_total{
+    text-align: right;
+    margin: 24px 24px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.final_total-price,.final_total-action{
+    display: inline-block;
+}
+
+.final_total-price{
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+/* Buy button */
+.buy_btn{
+    border: none;
+    padding: 6px 11px;
+    border-radius: 5px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.buy_btn:hover{
+    background-color: rgba(0, 128, 0, 0.724);
+
+}
+
+/* Form */
+.form_wrap{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    user-select: none;
+    display: none;
+}
+.form_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form_container{
+    background-color: #fff;
+    border-radius: 6px;
+    min-width: 680px;
+    position: absolute;
+    top: 26px;
+}
+
+/* Form title */
+.form_title{
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 12px;
+}
+
+.form_title > span{
+    padding: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #928f8f;
+}
+
+/* Form content */
+.form_content{
+    padding: 12px 12px 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form_input,.form_select-wrap {
+    margin-bottom: 6px;
+    height: 85px;
+}
+
+.form_input:nth-child(5){
+    height:60px;
+}
+
+.form_input:last-child{
+    height: 166px;
+}
+
+.form_input label{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form_input > .input_block{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 58px;
+}
+
+.form_input input,.form_select select,.form_input textarea{
+    padding: 6px 8px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.form_input > div.form_db-input{
+    display: flex;
+    justify-content:space-between;
+}
+
+/* Input block (with message error)*/
+input.invalid, select.invalid{
+    border: 1px solid red;
+}
+
+.form_input > div.form_single-input > .input_block{
+    width: 97%;
+}
+
+.input_block > span{
+    color: red;
+    margin: 5px 0;
+    font-size: 12px;
+    display: block;
+}
+
+.form_input > .form_db-input> .input_block{
+    width: 49%;
+}
+
+.form_input > .form_db-input> .input_block input{
+    width: 94.6%;
+}
+/* Form select address */
+.form_select,.form_select-span{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_select select,.form_select-span span{
+    width: 32%;
+    cursor: pointer;
+}
+
+.form_select-span span{
+    color: red;
+    margin: 5px 10px;
+    font-size: 12px;
+}
+
+
+/* Form message */
+.form_input textarea{
+    resize: none;
+    width: 97.4%;
+    height: 74%;
+}
+
+/* Form action */
+.form_action{
+    padding: 8px 12px;
+    text-align: right;
+}
+
+.form_action button{
+    border:none;
+    color: #fff;
+    margin-left: 8px;
+    padding: 4px 10px;
+    border-radius:4px;
+    cursor: pointer;
+}
+
+.form_action button:hover{
+    opacity: 0.7;
+}
+
+.form_action button.form_cancel{
+    background-color: red;
+}
+
+.form_action button.form_confirm{
+    background-color: rgb(10, 138, 244);
+}
+
+
+/* Thank you for purchasing */
+.thank_you{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    display: none;
+}
+
+.thank_you-img > img{
+    width: 26%
+}
+
+.thank_you-text{
+    transform: translateY(-20px);
+}
+
+.thank_you-text > h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.thank_you-text > p{
+    margin-top: 10px;
+    line-height: 29px;
+    color: #a19e9e;
+}
+
+.thank_madonhang{
+    color:green;
+    text-decoration: underline;
+}
+
+.thank_you-action{
+    width: 48%;
+    margin: 10px auto;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.thank_you-action > span{
+    text-transform: uppercase;
+}
+
+.thank_you-action > span> a{
+    padding: 8px 16px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 0.15s linear;
+}
+
+.thank_you-action > span:first-child> a{
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.thank_you-action > span:first-child> a:hover{
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+}
+
+.thank_you-action > span:last-child> a{
+    border: 1px solid black;
+}
+
+.thank_you-action > span:last-child> a:hover{
+    background-color: black;
+    color: white;
+}

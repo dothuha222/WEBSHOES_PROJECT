@@ -1,0 +1,97 @@
+/* Bill wrap */
+p{
+    margin: 10px 0;
+}
+.bills{
+    width: 80%;
+    margin: 30px auto 0;
+}
+
+.bills_wrap{
+    margin-bottom: 100px;
+}
+
+/* Bill container */
+
+.bills_container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Bill left */
+.bills_left{
+    width: 70%;
+    position: relative;
+}
+
+.bills_left-item{
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #d8d5d5;
+}
+
+.bills_left-item:last-child{
+    border-bottom:none
+}
+/* Bill left image */
+.bills-img{
+    width: 20%;
+}
+
+.bills-img > img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Bill left info */
+.bills-info{
+    flex:1;
+    margin: 14px; 
+    display: flex;
+    justify-content:space-between;
+    color: #666
+}
+
+.bills-info > div:last-child{
+    margin: 20px 120px 0px 0px;
+    font-weight: 600;
+    font-size: 26px;
+    color: #000;
+}
+
+/* Bill left button */
+.bills_left-btn{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    border: 1px solid rgba(255, 0, 0, 0.584);;
+    color: rgba(255, 0, 0, 0.979);;
+    border-radius: 8px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: all 0.12s linear;
+    user-select: none;
+}
+
+.bills_left-btn:hover{
+    background-color:rgba(255, 0, 0, 0.584);
+    color: white;
+}
+
+/* Bill right */
+.bills_right{
+    flex: 1;
+    margin-left: 50px;
+    
+}
+
+.bills_right-list{
+    padding: 22px;
+    background-color: #f6f6f6d1;
+}
+
+.item-child {
+    display: flex;
+    justify-content: space-between;
+}

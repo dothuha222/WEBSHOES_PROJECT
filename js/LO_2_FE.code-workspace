@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/json_server"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "LO_2_FE"
+	}
+}

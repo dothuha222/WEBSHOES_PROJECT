@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bill.css">
+    <link rel="stylesheet" href="./css/dialog.css">
+    <title>Bill page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header_wrap">
+                <div class="header_left">
+                    <a href="./index.html">
+                        <img src="./image/nike_modal.png" alt="Nike modal">     
+                        <h4>Nike</h4> 
+                    </a>       
+                </div>
+                <div class="header_right">
+                    <ul>
+                        <li>
+                            <a href="./index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="./bills.html">BILLS</a>
+                        </li>
+
+                        <li class="cart">
+                            <a href="./cart.html">
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bills">
+            <!-- <div class="bills_wrap">
+                Bill title
+                <div class="bills_title">
+                    <h2><i class="fa-solid fa-greater-than"></i> CHI TIẾT ĐƠN HÀNG <span class="maDonHang"style="color:red">23023DFGHJ</span></h2>
+                </div>
+                Bill container
+                <div class="bills_container">
+                    Bill left
+                    <div class="bills_left">
+                        <div class="bills_left-list">
+                            <div class="bills_left-item">
+                                <div class="bills-img">
+                                    <img src="image/img1.webp">
+                                </div>
+                                <div class="bills-info">
+                                    <div>
+                                        <p>Nike Air Force 1 Mid 07</p>
+                                        <p>Đơn giá: <span class="donGia">$1.200</span></p>
+                                        <p>Số lượng mua: <span class="soLuongMua">2</span></p>
+                                    </div>
+                                    <div>
+                                        <span class="TongGia">$2.400</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    Bill right
+                    <div class="bills_right">
+                        Bill right list
+                        <div class="bills_right-list">
+                            <div class="bills_right-item">
+                                <h3>Tóm tắt đơn hàng</h3>
+                                <div class="item-child">
+                                    <p>Ngày tạo đơn</p>
+                                    <p class="bills_purchase-day"></p>
+                                </div>
+                                <div class="item-child">
+                                    <p>Tạm tính</p>
+                                    <p class="bills_price"></p>
+                                </div>
+                                <div class="item-child">
+                                    <p>Phí vận chuyển</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="item-child">
+                                    <p>Tổng tiền</p>
+                                    <p class=" bills_price" style="font-weight: 600;font-size: 21px;"></p>
+                                </div>
+                            </div>
+                            <div class="bills_right-item">
+                                <h3>Địa chỉ</h3>
+                                <div class="item-child">
+                                    <p class="userName"></p>
+                                </div>
+                                <div class="item-child">
+                                    <p class="address"></p>
+                                </div>
+                                <div class="item-child">
+                                    <p class="phoneNumber"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+       
+    </div>
+    <div class="dialog-overlay">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <span class="dialog-title">Thông báo</span>
+                <span class="close-dialog"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div class="dialog-info">
+                <span class="dialog-message">Thêm vào giỏ hàng thành công</span>
+                <div class="dialog-button dialog-button-alert">
+                    <a href="./cart.html">Xem giỏ hàng</a>
+                </div>
+                <div class="dialog-button dialog-button-confirm">
+                    <span class="dialog-ok button-confirm">Xác nhận</span>
+                    <span class="dialog-cancel button-confirm">Hủy</span>
+                </div>
+
+            </div>
+        </div>
+    </div>  
+    <script type = module src="./js/handleBills.js"></script>
+</body>
+</html>

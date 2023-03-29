@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dialog.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header_wrap">
+                <div class="header_left">
+                    <a href="./index.html">
+                        <img src="./image/nike_modal.png" alt="Nike modal">     
+                        <h4>Nike</h4> 
+                    </a>       
+                </div>
+                <div class="header_right">
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="./bills.html">BILLS</a>
+                        </li>
+                        <li class="cart">
+                            <a href="./cart.html">
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="products">
+        </div>
+    </div>
+    <div class="dialog-overlay">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <span class="dialog-title">Thông báo</span>
+                <span class="close-dialog"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div class="dialog-info">
+                <span class="dialog-message">Thêm vào giỏ hàng thành công</span>
+                <div class="dialog-button dialog-button-alert">
+                    <a href="./cart.html">Xem giỏ hàng</a>
+                </div>
+                <div class="dialog-button dialog-button-confirm">
+                    <span class="dialog-ok button-confirm">Xác nhận</span>
+                    <span class="dialog-cancel button-confirm">Hủy</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="module" src = "./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Dialog */
+.dialog-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #0000008a;
+    display: none;
+}
+
+.dialog-content{
+    width: 21%;
+    background-color: #fff;
+    margin: 26px auto;
+    box-shadow: 0 0 10px #2c2b2b;
+    user-select: none;
+}
+
+/* Dialog header */
+.dialog-header{
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Close Dialog */
+.close-dialog{
+    position: absolute;
+    right: -13px;   
+    top: -12px;
+    padding: 1px 7px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+/* Dialog info */
+.dialog-info{
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.dialog-message{
+    font-style: italic;
+}
+
+.dialog-button{
+    margin-top: 30px;
+}
+
+.dialog-button > a{
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: 1px solid transparent;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.1s linear;
+}
+
+.dialog-button > a:hover{
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+/* Button of alert */
+.dialog-button-alert{
+    /* display: none; */
+}
+/* Button of confirm */
+.dialog-button-confirm{
+    display: none;
+}
+
+.button-confirm{
+    padding: 6px 9px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+
+}
+
+.dialog-ok{
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #000;
+}
+
+.dialog-ok:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid;
+}
+
+.dialog-cancel{
+    border: 1px solid;
+    margin-left: 15px;
+}
+
+.dialog-cancel:hover{
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #000;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/dialog.css">
+    <title>Cart page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header_wrap">
+                <div class="header_left">
+                    <a href="./index.html">
+                        <img src="./image/nike_modal.png" alt="Nike modal">     
+                        <h4>Nike</h4> 
+                    </a>       
+                </div>
+                <div class="header_right">
+                    <ul>
+                        <li>
+                            <a href="./index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="./bills.html">BILLS</a>
+                        </li>
+
+                        <li class="cart">
+                            <a href="./cart.html">
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cart_wrap">
+
+            <!--Cart empty -->
+            <div class="cart_empty">
+                <div class="cart_empty-img">
+                    <img src="./image/cart-empty.png" alt="">
+                </div>
+            </div>
+
+           <!-- Cart not empty -->
+           <div class="cart_no-empty">
+                <div class="table_cart-area">
+                    <div class="table_cart-area-top">
+                        <table class="table table_cart">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="final_total">
+                        <div class="final_total-price">
+                            <span>Total: </span>
+                            <span></span>
+                        </div>
+                        <div class="final_total-action">
+                            <button class="buy_btn">Buy</button>
+                        </div>
+                    </div>
+            </div>
+           </div>
+           <div class="back_to_shop">
+                <a href="./index.html">&larr; Back to Shopping</a>
+           </div>
+        </div>
+        <div class="form_wrap">
+            <div class="form_overlay">
+            </div>
+            <div class="form_container">
+                <div class="form_title">
+                    <h3>Thông tin người mua</h3>
+                    <span class="form_close"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+                <div class="form_content">
+                    <div class="form_input">
+                        <label for="">Họ và tên<sup style="color:red">*</sup></label>
+                        <div class="form_db-input">
+                            <div class="input_block">
+                                <input type="text" class="" placeholder="Họ">
+                                <span></span>
+                            </div>
+                            <div class="input_block">
+                                <input type="text" class="" placeholder="Tên">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_input">
+                        <label for="">Email<sup style="color:red">*</sup></label>
+                        <div class="form_single-input input_block">
+                            <input type="text" class="" placeholder="Email">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form_input">
+                        <label for="">Số điện thoại<sup style="color:red">*</sup></label>
+                        <div class="form_single-input input_block">
+                            <input type="text" class="" placeholder="Số điện thoại">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form_select-wrap input_block">
+                        <label for="">Địa chỉ<sup style="color:red">*</sup></label>
+                        <div class="form_select">
+                            <select name="provinces" id="provinces">
+                                <option value="" hidden >--Chọn Tỉnh/Thành phố--</option>
+                            </select>
+                            <select name="districts" id="districts">
+                                <option value="" hidden >--Chọn Huyện/Quận--</option>
+                            </select>
+                            <select name="wards" id="wards">
+                                <option value="" hidden >--Chọn Phường/Xã--</option>
+                            </select>
+                        </div>
+                        <div class="form_select-span">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form_input">
+                        <div class="form_single-input input_block">
+                            <input type="text" placeholder="Số nhà">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form_input">
+                        <label for="message">Lời nhắn</label>
+                        <textarea name="" id="" cols="70"></textarea>
+                    </div>
+                </div>
+                <div class="form_action">
+                    <button class="form_cancel">Hủy</button>
+                    <button class="form_confirm">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+        <div class="thank_you">
+            <div class="thank_you-container">
+                <div class="thank_you-img">
+                    <img src="./image/thank_cart.png" alt="Success Cart">
+                </div>
+                <div class="thank_you-text">
+                    <h2>Cảm ơn đã mua hàng</h2>
+                    <p>Chào <span class="thank_username"></span>,đơn hàng của bạn với mã <span class="thank_madonhang"></span>
+                        đã được đặt thành công. <br>Hệ thống sẽ tự động gửi Email và SMS xác nhận đơn hàng đến số điện thoại và hòm
+                        thư bạn đã cung cấp <br>Cảm ơn <span class="thank_username"></span> đã tin mua sản phẩm!
+                    </p>
+                </div>
+                <div class="thank_you-action">
+                    <span><a href="./index.html">Tiếp tục mua sắm</a></span>
+                    <span><a href="./bills.html">Theo dõi đơn hàng</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog-overlay">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <span class="dialog-title">Thông báo</span>
+                <span class="close-dialog"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div class="dialog-info">
+                <span class="dialog-message">Thêm vào giỏ hàng thành công</span>
+                <div class="dialog-button dialog-button-alert">
+                    <a href="./cart.html">Xem giỏ hàng</a>
+                </div>
+                <div class="dialog-button dialog-button-confirm">
+                    <span class="dialog-ok button-confirm">Xác nhận</span>
+                    <span class="dialog-cancel button-confirm">Hủy</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="module" src = "./js/handleCartDisplay.js"></script>
+    <script type="module" src ='./js/getAPIAddress.js'></script>
+    <script type="module" src ='./js/handleCartLogic.js'></script>
+    <script type="module" src ='./js/handleBills.js'></script>
+</body>
+</html>
